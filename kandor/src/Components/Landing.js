@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 
 export default class Landing extends React.Component {
     constructor(props){
@@ -17,6 +18,10 @@ export default class Landing extends React.Component {
       return (
         <div>
             <h1>Kandor. Fostering a community for you.</h1>
+            <h1>What would you like to chat about today?</h1>
+            <Button variant="primary" block>
+                Block level button
+            </Button>
         </div>
       );
     }
