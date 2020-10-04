@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
-import Landing from './Components/Landing.js';
+import Landing from './components/Landing.js';
 
 function App() {
-  return <div className='App'>Kandor
-  <Landing/>
-  </div>;
+  return (
+    <div className='App'>
+      <Landing />
+    </div>
+  );
 }
 
 export default App;
