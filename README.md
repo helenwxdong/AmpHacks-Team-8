@@ -18,3 +18,11 @@ Moreover, the following [research](https://www.ncbi.nlm.nih.gov/pubmed/23749730)
 `Technologies Used: React and Firebase`
 
 
+
+***Future Features:***
+- [ ] Match people with Interest using Artificial technology
+- [ ] Virtual call
+- [ ] Building Communities
+- [ ] Virtual Care Homes
+
+
