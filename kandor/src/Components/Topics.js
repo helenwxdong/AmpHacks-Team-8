@@ -12,16 +12,44 @@ const Topics = () => {
     { id: 7, text: 'Books', isSelected: false },
     { id: 8, text: 'Children', isSelected: false },
   ]);
+
+  const selectTopic = (id) => {
+    // setTopics((topic) => {
+    //   [
+    //     ...topics,
+    //     {
+    //       isSelected: true,
+    //     },
+    //   ];
+    // });
+    // setTopics((topic) => {
+    //   return {
+    //     ...topics,
+    //     topic.isSelected: true,
+    //   };
+    // });
+    // console.log(topics.isSelected);
+  };
+
   return (
     <div className='TopicsContainer'>
       <h2 style={{ textAlign: 'center' }}>
         What would you like to chat about today?
       </h2>
-      <ul className='TopicsList'>
-        {topics.map((topic) => (
-          <Topic key={topic.id} topic={topic} />
-        ))}
-      </ul>
+      <form className='Form'>
+        <ul className='TopicsList'>
+          {topics.map((topic) => (
+            <Topic
+              key={topic.id}
+              topic={topic}
+              onClick={() => selectTopic(topic.id)}
+            />
+          ))}
+        </ul>
+        <button className='Submit' type='submit'>
+          Submit
+        </button>
+      </form>
     </div>
   );
 };

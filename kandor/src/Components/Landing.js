@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import Logo from '../img/kandor.png';
 import Topics from './Topics.js';
+import Chat from './Chat';
 
 const Landing = () => {
   return (
@@ -14,6 +15,7 @@ const Landing = () => {
           community for you.
         </h1>
         <Topics />
+        <Chat />
       </div>
     </div>
   );
