@@ -121,3 +121,110 @@ h3 {
   justify-content: center;
   align-items: center;
 }
+
+/******Chat******/
+
+.SignIn {
+  background-color: #496076;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 24px;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  font-size: 19px;
+}
+.SignIn:hover {
+  background-color: #2dbd86;
+  color: white;
+}
+
+.MainChat {
+  padding: 10px;
+  height: 80vh;
+  margin: 10vh 0 10vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.MainChat::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+.MainChat::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+.MainChat::-webkit-scrollbar-thumb {
+  background: grey;
+}
+
+.TextInput {
+  height: 10vh;
+  width: 100%;
+  max-width: 728px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.TextInput button {
+  width: 20%;
+  font-family: 'Inter', sans-serif;
+  background-color: #c2f1db;
+}
+
+input {
+  line-height: 1.5;
+  width: 100%;
+  font-size: 1.5rem;
+  font-family: 'Inter', sans-serif;
+  background: rgb(231, 231, 231);
+  color: #000;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+}
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.sent p {
+  color: white;
+  background: #0b93f6;
+  align-self: flex-end;
+}
+.received p {
+  background: #e5e5ea;
+  color: black;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
+
+.Text {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
